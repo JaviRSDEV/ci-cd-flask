@@ -22,3 +22,5 @@ Este documento resume los pasos técnicos seguidos para la configuración del fl
 
 * **Tras esto se han ejecutado los mismos**
 ![image](images/tests_ejecutados.jpg)
+
+* **si**

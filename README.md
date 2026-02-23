@@ -12,13 +12,13 @@ Este documento resume los pasos técnicos seguidos para la configuración del fl
   git remote set-url origin [https://github.com/JaviRSDEV/ci-cd-flask.git](https://github.com/JaviRSDEV/ci-cd-flask.git)
 
 * **Tras esto activamos el entorno virtual e instalamos todas las dependencias**
-![image]('images/requirements.txt.jpg')
+![image](images/requirements.txt.jpg)
 
 * **Se han añadido varios endpoints para luego crear tests adicionales**
-![image]('images/endpoints_añadidos.jpg')
+![image](images/endpoints_añadidos.jpg)
 
 * **Se han añadido varios tests para comprobar la funcionalidad de los endpoints añadidos**
-![image]('images/tests_añadidos.jpg')
+![image](images/tests_añadidos.jpg)
 
 * **Tras esto se han ejecutado los mismos**
-![image]('images/tests_ejecutados.jpg')
+![image](images/tests_ejecutados.jpg)

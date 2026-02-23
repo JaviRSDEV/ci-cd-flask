@@ -23,4 +23,5 @@ Este documento resume los pasos técnicos seguidos para la configuración del fl
 * **Tras esto se han ejecutado los mismos**
 ![image](images/tests_ejecutados.jpg)
 
-* **si**
+* **Una vez hecho un push al repositorio que hemos clonado en nuetra cuenta, comprobamos que funcione correctamente los actions de github**
+![image](images/actions.jpg)

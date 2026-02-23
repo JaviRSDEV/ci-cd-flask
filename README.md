@@ -1,54 +1,24 @@
-# ci-cd-flask
+# Guía de Pasos Realizados - Práctica CI/CD Flask
 
-Este repositorio contiene los archivos necesarios para realizar una práctica de
-**introducción a CI/CD** para una aplicación [Flask][1].
+Este documento resume los pasos técnicos seguidos para la configuración del flujo de integración y entrega continua del proyecto.
 
-En esta práctica vamos a realizar las siguientes tareas.
+---
 
-- **Intregración Continua (CI) con GitHub Actions**. Vamos a automatizar la ejecución de
-  tests unitarios cada vez que se haga un _push_ a la rama `main`.
-- **Entrega Continua (CD)**. Vamos a automatizar la creación y publicación de
-  una imagen Docker en Docker Hub cuando se pasen los test unitarios.
-- **Despliegue Continuo (CD)**. Vamos a automatizar el despliegue de la imagen
-  Docker en AWS.
+## 1. Gestión del Repositorio
+* **Fork:** Se creó una copia del repositorio original en la cuenta personal de GitHub.
+* **Clone:** Clonado del repositorio en la instancia de Ubuntu.
+* **Configuración del Remoto:** Se cambió el `origin` para apuntar al repositorio personal y permitir el envío de cambios:
+  ```bash
+  git remote set-url origin [https://github.com/JaviRSDEV/ci-cd-flask.git](https://github.com/JaviRSDEV/ci-cd-flask.git)
 
-## Cómo crear un virtualenv en Python
+* **Tras esto activamos el entorno virtual e instalamos todas las dependencias**
+![image]('images/requirements.txt.jpg')
 
-Creamos el entorno virtual.
+* **Se han añadido varios endpoints para luego crear tests adicionales**
+![image]('images/endpoints_añadidos.jpg')
 
-```bash
-python3 -m venv venv
-```
+* **Se han añadido varios tests para comprobar la funcionalidad de los endpoints añadidos**
+![image]('images/tests_añadidos.jpg')
 
-Activamos el entorno virtual.
-
-```bash
-source venv/bin/activate
-```
-
-Instalamos las dependencias.
-
-```bash
-pip install -r requirements.txt
-```
-
-Para desactivar el entorno virtual.
-
-```bash
-deactivate
-```
-
-## Cómo ejecutar los tests
-
-Para realizar los tests vamos a utilizar `unittest`, que es el framework de
-pruebas unitarias que viene integrado en Python.
-
-Desde la raíz del proyecto, ejecutamos el siguiente comando.
-
-```bash
-python3 -m unittest tests/*.py
-```
-
-Este comando ejecutará todos los tests que se encuentren en la carpeta `tests`.
-
-[1]: https://flask.palletsprojects.com/en/stable/
+* **Tras esto se han ejecutado los mismos**
+![image]('images/tests_ejecutados.jpg')

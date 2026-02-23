@@ -15,15 +15,22 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    #Clona nuestro repositorio en el contenedor de GitHub Actions
       - uses: actions/checkout@v2
+
+    #Instala python en el contenendor de GitHub Actions
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.13'
+          
+    #Instalamos las dependencias de nuestro proyecto
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      
+    #Ejecutamos los tests que hemos definido en el proyecto en el directorio tests
       - name: Run tests
         run: |
           python -m unittest discover tests
